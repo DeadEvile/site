@@ -1,0 +1,312 @@
+* body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+* {
+    box-sizing: border-box;
+}
+.menu {
+    width: 100%;
+    height: 140px;
+    background-color: whitesmoke;
+    
+    
+}
+.logo img{
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+.text1 {
+    width:180px;
+    height: 20px;
+    position: relative;
+    top: -120px;
+    left: 150px;
+}
+.p1 {
+    font-size: 30px;
+    
+}
+.p2 {
+    font-size: 20px;
+    color: tomato;
+    position: relative;
+    top: -22px;
+}
+.menupst ul {
+    list-style-type: none;
+    float: right;
+    margin-right: 40px;
+    margin-top: -110px;
+}
+.menupst ul li {
+    float: left;
+    color: black; 
+    margin-left: 20px;
+    font-style: Helvetica,sans-serif;
+    transition: transform 250ms;
+}
+.menupst ul li:hover {
+    color: gray;
+    transform: scale(1.2);
+}
+.dv1 {
+    width: 100%;
+    height: 596px;
+    
+}
+.dv2 {
+    width: 50%;
+    height: 630px;
+    float: left;
+    position: relative;
+    top: -35px;
+    
+    
+}
+.dv2 p {
+    width: 450px;
+    position: relative;
+    left: 190px;
+    top: 170px;
+    font-size: 40px;
+    font-weight: lighter;
+}
+.dv2 .p3 {
+    font-size: 17px;
+}
+.dv3 {
+    width: 50%;
+    height: 631px;
+    float: left;
+    position: relative;
+    top: -35px;
+}
+.knopka {
+    width: 110px;
+    height: 40px;
+    background-color: black;
+    position: relative;
+    top: 210px;
+    left: 190px;
+    color: white;
+    text-align: center;
+    
+}
+.knopka h5 {
+    color: white;
+    font-family: sans-serif;
+    font-weight: lighter;
+    padding-left: auto;
+    padding-top: 11px;
+    cursor: pointer;
+}
+.knopka:hover {
+    background-color: gray;
+}
+.text {
+    width: 100%;
+    height: 500px;
+    background-color: whitesmoke;
+    text-align: center;
+}
+.text .ptx1 {
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 40px;
+}
+.text .ptx2 {
+    width: 70%;
+    font-size: 20px;
+    margin-left: 15%;
+    margin-top: 20px;
+}
+.text .ptx3 {
+    width: 70%;
+    font-size: 20px;
+    margin-left: 15%;
+    margin-top: 50px;
+}
+/* esi slideshowna */
+.slider {
+    width: 930px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    margin-top: 20px;
+}
+.slides {
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+.slides input {
+    display: none;
+}
+.slide {
+    width: 20%;
+    transition: 2s;
+    animation-name: slideshow;
+    animation-duration: 20s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 5;
+}
+
+@keyframes slideshow {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-930px);
+    }
+    50% {
+        transform: translateX(-1860px);
+    }
+}
+.slide img {
+    width: 930px;
+    height: 500px;
+    object-fit: cover;
+}
+.navigation-manual {
+    position: absolute;
+    width: 930px;
+    margin-top: 460px;
+    display: flex;
+    justify-content: center;
+    
+}
+.manual-btn {
+    width: 20px;
+    height: 20px;
+    border: 2px solid white;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 1s;
+}
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+.manual-btn:hover {
+    background-color: white;
+}
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+#radio2:checked ~ .first {
+    margin-left: -20%;
+}
+#radio3:checked ~ .first {
+    margin-left: -40%;
+}
+/*esi slideshowi verchna*/
+.active {
+    width: 100%;
+    height: 200px;
+    margin-top: 120px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 600;
+    
+}
+.event {
+    width: 100%;
+    height: 900px;
+    background-color: white;
+    position: relative;
+    
+}
+.event div {
+    float: left;
+    width: 505px;
+    height: 450px;
+    
+
+}
+.div1 {
+    background-color: cadetblue;
+}
+.div2 {
+    background-color: white;
+}
+.div2 p{
+    font-size: 26px;
+    font-weight: 500;
+    width: 230px;
+    margin-left: 70px;
+    margin-top: 60px;
+}
+.div2 .p7{
+    width: 300px;
+    font-size: 17px;
+    margin-bottom: 40px;
+}
+.div2  a {
+    text-decoration: none;
+    color: red;
+    margin-left: 70px;
+    
+}
+.div3 {
+    background-color: blue;
+}
+.div4 {
+    background-color: chartreuse;
+}
+.div5 {
+    background-color: chocolate;
+}
+.div6 {
+    background-color: cornflowerblue;
+}
+/* esi grancumna8*/
+.send {
+    width: 70%;
+    height: 300px;
+    margin-left: 15%;
+
+}
+.send p {
+    font-size: 40px;
+    font-weight: 700;
+    margin-left: 20px;
+    margin-top: 120px;
+}
+.send input {
+    border-left: 2px solid transparent;
+    border-right: 2px solid transparent;
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid black;
+    width: 1000px;
+    height: 40px;
+    margin-left: 20px;
+}
+.send input:hover {
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    width: 1000px;
+    height: 40px;
+    margin-left: 20px;
+}
+.send .submit {
+    width: 1000px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    margin-top: 20px;
+    text-align: center;
+    margin-left: 20px;
+    font-size: 20px;
+    padding-top: 8px;
+}
+.send .submit:hover {
+    background-color: gray;
+    color: black;
+}
